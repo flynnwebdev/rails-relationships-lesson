@@ -13,7 +13,7 @@ Things you may want to cover:
 
 * Configuration
 
-* Database creation
+* This is another conflict
 
 * Database initialization
 
