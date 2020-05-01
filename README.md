@@ -9,7 +9,7 @@ Things you may want to cover:
 
 * This is a change 
 
-* This is a merge conflict
+* Merge conflicts for fun and profit
 
 * Configuration
 

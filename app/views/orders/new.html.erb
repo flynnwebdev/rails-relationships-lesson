@@ -1,0 +1,24 @@
+<h1>Your Order</h1>
+<%= image_tag @book.picture, width: 120 if @book.picture.attached? %>
+<h1><%= @book.title %></h1>
+<h3>By: <%= @book.author.full_name %></h3>
+<h5><%= number_to_currency @book.price %></h5>
+<button id="pay-now">Checkout Now</button>
+
+<script src="https://js.stripe.com/v3/"></script>
+
+<script>
+function redirectToStripe() {
+    var stripe = Stripe('<%= Rails.application.credentials.dig(:stripe, :publishable_key) %>');
+    stripe.redirectToCheckout({
+        sessionId: '<%= @session.id %>'
+    }).then(function (result) {
+        // If `redirectToCheckout` fails due to a browser or network
+        // error, display the localized error message to your customer
+        // using `result.error.message`.
+    });
+}
+
+document.querySelector("#pay-now").addEventListener("click", redirectToStripe)
+
+</script>
