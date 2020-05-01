@@ -9,7 +9,7 @@ Things you may want to cover:
 
 * This is a change 
 
-* System dependencies
+* This is a merge conflict
 
 * Configuration
 
