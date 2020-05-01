@@ -4,4 +4,4 @@ class AddPriceToBooks < ActiveRecord::Migration[6.0]
   end
 end
 
-# Hello!
+
