@@ -15,7 +15,7 @@ Things you may want to cover:
 
 * This is another conflict
 
-* This is another conflict again
+* Database initialization
 
 * How to run the test suite
 
