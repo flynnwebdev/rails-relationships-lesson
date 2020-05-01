@@ -7,7 +7,7 @@ Things you may want to cover:
 
 * Ruby version
 
-* This is a change 
+* This is a change
 
 * Merge conflicts for fun and profit
 
