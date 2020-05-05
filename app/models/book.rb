@@ -5,5 +5,5 @@ class Book < ApplicationRecord
   has_many :users, through: :book_lists
   has_many :genres, through: :books_genres
 
-  validates :title, presence: true, length: { minimum: 3 }
+  validates :title, presence: true, length: { minimum: 2 }
 end
