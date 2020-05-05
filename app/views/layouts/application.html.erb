@@ -10,15 +10,18 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <nav>
-      <% if user_signed_in? %>
-        <p>Welcome, <%= current_user.email %>! | <%= link_to 'Logout', destroy_user_session_path, method: "delete" %></p>
-      <% else %>
-        <p><%= link_to 'Login', new_user_session_path %> | <%= link_to 'Sign Up', new_user_registration_path %></p>
-      <% end %>
-    </nav>
-    <%= yield %>
+    <section>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <nav>
+        <%= image_tag url_for('book_guide_hero_books.png'), alt: 'Stack of Books', width: 50 %>
+        <% if user_signed_in? %>
+          <p>Welcome, <%= current_user.email %>! | <%= link_to 'Logout', destroy_user_session_path, method: "delete" %></p>
+        <% else %>
+          <p><%= link_to 'Login', new_user_session_path %> | <%= link_to 'Sign Up', new_user_registration_path %></p>
+        <% end %>
+      </nav>
+      <%= yield %>
+    </section>
   </body>
 </html>

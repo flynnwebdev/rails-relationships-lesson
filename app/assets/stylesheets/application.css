@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+
+    background: url('library-bg.webp') no-repeat center;
+    background-size: cover;
+    background-position: fixed;
+    padding: 0;
+    margin: 0;
+}
+
+body > section {
+    padding: 1rem;
+    min-height: 100vh;
+    background: #ffffffd0;
+}

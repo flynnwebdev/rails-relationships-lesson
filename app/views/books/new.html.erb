@@ -14,6 +14,10 @@
         <%= f.collection_check_boxes(:genre_ids, @genres, :id, :name) %>
     </div>
     <div>
+        <%= f.label :picture %>
+        <%= f.file_field :picture, accept: 'image/png,image/gif,image/jpeg,image/jpg,image/webp' %>
+    </div>
+    <div>
         <%= f.submit %>
     </div>
 <% end %>

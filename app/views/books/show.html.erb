@@ -1,3 +1,7 @@
+<%= image_tag @book.picture, width: 120 if @book.picture.attached? %>
 <h1><%= @book.title %></h1>
 <h3>By: <%= @book.author.full_name %></h3>
-
+<% if @book.price %>
+    <h5><%= number_to_currency @book.price %></h5>
+    <%= link_to "Buy Now!", new_order_path(book_id: @book.id) %> 
+<% end %>

@@ -19,8 +19,9 @@ class BooksController < ApplicationController
     @authors = Author.all
     @genres = Genre.all
     @book = Book.new(book_params)
+    @book.picture.attach(params[:book][:picture])
     if @book.save
-      render json: @book
+      redirect_to book_path(@book)
     else
       flash[:alert] = @book.errors.full_messages.join()
       render "new"
