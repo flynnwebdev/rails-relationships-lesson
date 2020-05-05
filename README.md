@@ -7,7 +7,7 @@ Things you may want to cover:
 
 * Ruby version
 
-* This is a change 
+* This is a change
 
 * Merge conflicts for fun and profit
 
@@ -15,7 +15,7 @@ Things you may want to cover:
 
 * This is another conflict
 
-* This is another conflict again
+* Database initialization
 
 * How to run the test suite
 
